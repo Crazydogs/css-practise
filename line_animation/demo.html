@@ -1,4 +1,29 @@
 <html>
-<head></head>
-<body><body>
+<head>
+    <script src="../jquery-1.7.1.min.js"></script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+            background: #1ec1b2;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="line_group_transition.css" />
+</head>
+<body>
+    <div id="container" class="line-animation-container"></div>
+</body>
+    <script src="line_group_transition.js"></script>
+    <script>
+        var animations = new Animation({
+            container: '#container',
+            num: 8
+        });
+    </script>
 </html>
